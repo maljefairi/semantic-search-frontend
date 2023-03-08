@@ -1,6 +1,16 @@
-body { background: #141414; color: white; font-family: arial; text-align: center; }
-#logo { width: 300px; }
-input { font-size: 20px; padding: 5px;     border-radius: 5px;
+body { 
+    background: white; 
+    color: black; 
+    font-family: arial; 
+    text-align: center; 
+}
+#logo { 
+    width: 300px; 
+}
+input { 
+    font-size: 20px; 
+    padding: 5px;     
+    border-radius: 5px;
 }
 input[type=submit] { 
     background: black; 
@@ -11,7 +21,7 @@ input[type=submit] {
 #results {
     text-align: left;
     width: 800px;
-    border: solid white 1px;
+    border: solid black 1px;
     margin: 20px auto;
     padding: 20px;
     background: white;
@@ -21,11 +31,12 @@ input[type=submit] {
 
 h1 { 
     margin-left: 50px;
+    color: black;
 }
 ul {
     list-style-type: none;
+    padding: 0;
 }
 li {
     padding: 10px;
 }
-  

@@ -25,7 +25,7 @@ def search():
 
     search_term_vector = get_embedding(query, engine="text-embedding-ada-002")
 
-    df = pd.read_csv('earnings-embeddings.csv')
+    df = pd.read_csv('sidraAIDB_cleaned-embeddings.csv')
     df['embedding'] = df['embedding'].apply(eval).apply(np.array)
     df["similarities"] = df['embedding'].apply(lambda x: cosine_similarity(x, search_term_vector))
     sorted_by_similarity = df.sort_values("similarities", ascending=False).head(3)
